@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor dos Anéis</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/lor-header-logo.png" alt="Senhor dos áneis">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--is-active" href="#sobre">Sobre</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button " href="#personagens">Personagens</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button" href="#linguagens">Linguagem</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="sobre" class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/lor-logo.png" alt="O Senhor dos Anéis">
+            </div>
+            
+            <p class="text">
+                Na Segunda Era da Terra-média, o Senhor das Trevas Sauron forja o Um Anel na intenção de distribuir poderes e dominar, através do artefato, os senhores dos Elfos, Anões e dos Homens. Um exército de homens e elfos trava uma batalha contra Sauron em Mordor, onde Isildur, Príncipe de Gondor, corta o Anel junto com seu dedo, destruindo temporariamente sua forma física. Isildur, já corrompido pelo Um Anel, é morto por Orcs e o Anel se perde por mais de dois mil anos até ser encontrado pela criatura Gollum e mantido em segredo por mais de cinco séculos.
+            </p>
+            <p class="text">
+                Mais de seis décadas depois, Bilbo Bolseiro celebra seu 111º aniversário no Condado, reunindo seu velho amigo Gandalf, o Cinzento, entre outros. Bilbo revela sua intenção de deixar o Condado e partir em uma última aventura, deixando sua herança para seu sobrinho, Frodo, incluindo o Um Anel. Após descobrir a identidade do Um Anel, Frodo deixa o Condado na companhia de seu amigo, Samwise Gamgee, enquanto Gandalf parte em busca de ajuda. Ao chegarem em Bree, juntamente com Merry e Pippin, Frodo e "Sam" são surpreendidos por um estranho conhecido apenas como "Strider", que os leva até Valfenda. Elrond, Senhor dos Elfos, decide que o Um Anel deve ser destruído para evitar o retorno total de Sauron e Frodo se oferece para levá-lo até a Montanha da Perdição. Ao pequeno hobbit, juntam-se: o elfo Legolas, o anão Gimli, Boromir de Gondor e Aragorn, o herdeiro de Isildur e Rei de Gondor.
+            </p> 
+        </div>
+    </section>
+    <section id="personagens" class="characters">
+        <div class="characters__content">
+            <h2 class="title">Personagens</h2>
+            <nav class="characters__content__tabs">
+                <button data-tab-button="aba1" class="characters__content__tabs__button characters__content__tabs__button--is-active">
+                    Aba 1
+                </button>
+                <button data-tab-button="aba2" class="characters__content__tabs__button">
+                    Aba 2
+                </button>
+                <button data-tab-button="aba3" class="characters__content__tabs__button">
+                    Aba 3
+                </button>
+            </nav>
+            <ul data-tab-id="aba1" class="characters__content__list characters__content__list--is-active">
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="frodo" src="/dist/images/frodo1.jpg" alt="Frodo">
+                    <p class="text">Frodo</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="sam" src="/dist/images/sam1.jpg" alt="Sam">
+                    <p class="text">Samwise</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="aragorn" src="/dist/images/aragorn1.jpg" alt="Aragorn">
+                    <p class="text">Aragorn</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="legolas" src="/dist/images/legolas1.jpg" alt="Legolas">
+                    <p class="text">Legolas<p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="gandalf" src="/dist/images/gandalf1.jpg" alt="Gandalf">
+                    <p class="text">Gandalf</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="merry" src="/dist/images/merry1.jpg" alt="Merry">
+                    <p class="text">Merry</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="pippin" src="/dist/images/pippin1.jpg" alt="Pippin">
+                    <p class="text">Pippin</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="gimli" src="/dist/images/gimli1.jpg" alt="Gimli">
+                    <p class="text">Gimli<p>
+                </li>
+            </ul>
+            <ul data-tab-id="aba2" class="characters__content__list">
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="boromir" src="/dist/images/boromir1.jpg" alt="Boromir">
+                    <p class="text">Boromir</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="faramir" src="/dist/images/faramir1.jpg" alt="Faramir">
+                    <p class="text">Faramir</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="saruman" src="/dist/images/saruman1.jpg" alt="Saruman">
+                    <p class="text">Saruman</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="gollum" src="/dist/images/gollum1.jpg" alt="Gollum">
+                    <p class="text">Gollum<p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="galadriel" src="/dist/images/galadriel1.jpg" alt="Galadriel">
+                    <p class="text">Galadriel</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="elrond" src="/dist/images/elrond1.jpg" alt="Elrond">
+                    <p class="text">Elrond</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="arwen" src="/dist/images/arwen1.jpg" alt="Arwen">
+                    <p class="text">Arwen</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="bilbo" src="/dist/images/bilbo1.jpg" alt="Bilbo">
+                    <p class="text">Bilbo<p>
+                </li>
+            </ul>
+            <ul data-tab-id="aba3" class="characters__content__list">
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="sauron" src="/dist/images/sauron1.jpg" alt="Sauron">
+                    <p class="text">Sauron</p>
+                </li>
+                <li  class="characters__content__list__item">
+                    <img data-pers-id="cereborn" src="/dist/images/celeborn1.jpg" alt="Cereborn">
+                    <p class="text">Cereborn</p>
+                </li>
+            </ul>
+        </div>
+        <div data-desc-id="frodo" class="characters__description ">
+            <h2 class="title">Frodo</h2>
+            <img src="/dist/images/frodo2.jpg" alt="Frodo">
+            <p class="text">
+                Frodo Bolseiro, um hobbit do Condado, tornou-se uma das mais lendárias figuras na história da Terra-Média quando ele responsabilizou-se pela missão de destruir o Anel do Poder de Sauron para causar a queda do Senhor do Escuro. Frodo carregou o Um Anel dentro de Mordor a despeito de grande sofrimento e sacrifício pessoal, provando ser um herói de igual tamanho ao maior guerreiro.
+            </p>
+        </div>
+        <div data-desc-id="sam" class="characters__description">
+            <h2 class="title">Samwise Gamgi</h2>
+            <img src="/dist/images/sam2.jpg" alt="Samwise Gamgi">
+            <p class="text">200x300
+                Samwise Gamgi, servo leal de Frodo Bolseiro, estava determinado a
+                seguir seu senhor onde quer que ele fosse mesmo quando ele não fosse
+                convidado. Sam provou ser um bravo e leal companheiro e tornou-se o
+                amigo mais próximo de Frodo. Sua percepção Hobbit e seu amor por Frodo
+                levou a ambos através do perigo e do sofrimento até o fim da jornada. A
+                má vontade de Sam em perder a esperança mesmo quando as coisas pareciam
+                escuras fez com que eles não apenas alcançassem seu objetivo, mas
+                também sobrevivessem.
+                
+            </p>
+        </div>
+        <div data-desc-id="aragorn" class="characters__description">
+            <h2 class="title">Aragorn</h2>
+            <img src="/dist/images/aragorn2.jpg" alt="Aragorn">
+            <p class="text">
+                Aragorn era conhecido como Passolargo, um Guardião que vivia nos Ermos
+                protegendo as pessoas da Terra-Média. Mas ele era descendente da antiga
+                linhagem dos Reis, e quando ele se uniu à missão do Portador do Anel,
+                era chegado o momento dele completar seu destino. Enquanto Frodo
+                Bolseiro lutava para chegar à Montanha da Perdição, Aragorn combateu os
+                servos do Inimigo e revelou-se para Sauron como herdeiro de Isildur.
+                Após a derrota de Sauron os reinos de Gondor e Arnor foram reunidos sob
+                o reinado de Aragorn e a paz e a prosperidade retornaram à Terra-Média.
+            </p>
+        </div>
+        <div data-desc-id="legolas" class="characters__description">
+            <h2 class="title">Legolas Greenleaf</h2>
+            <img src="/dist/images/legolas2.jpg" alt="Legolas Greenleaf">
+            <p class="text">
+                Legolas Greenleaf (conhecido como Légolas Verdefolha ou Légolas Folha Verde), foi um elfo Sindar, filho de Thranduil, rei da Floresta das Trevas. Em 3019 da Terceira Era, Legolas foi a Rivendell como mensageiro dos elfos de sua terra. Lá participou do Conselho de Elrond, onde se juntou à Sociedade do Anel representando toda a raça élfica
+        </div>
+        <div data-desc-id ='gandalf' class="characters__description">
+            <h2 class="title">Gandalf</h2>
+            <img src="/dist/images/gandalf2.jpg" alt="Gandalf">
+            <p class="text">Gandalf aparece como um assistente, membro e líder (depois da  traição e queda de Saruman) da ordem conhecida como Istari, assim como líder da Sociedade do Anel e do exército do Ocidente. No início de Senhor dos Anéis que ele é conhecido como Gandalf o Cinzento, após assumir a liderança dos Istari, ele é conhecido como Gandalf o Branco.</p>
+        </div>
+        <div data-desc-id="merry" class="characters__description">
+            <h2 class="title">Meriadoc Brandebuque (Merry)</h2>
+            <img src="/dist/images/merry2.jpg" alt="Meriadoc Brandebuque (Merry)">
+            <p class="text">
+                Merry é mais sagaz e inteligente que um hobbit normal. Um mestre em travessuras, Merry geralmente consegue convencer seu impetuoso comparsa no crime, Pippin, a tomar parte em seus esquemas. Merry tem raciocínio rápido e é cheio de recursos, confiante e alegre. Ele sonha em ser heróico, mas é um fato que ele não é naturalmente corajoso e surpreende a si mesmo quando finalmente é chamado a um grande feito no campo de batalha... 
+            </p>
+        </div>
+        <div data-desc-id="pippin" class="characters__description">
+            <h2 class="title">Peregrin Tûk (Pippin)</h2>
+            <img src="/dist/images/pippin2.jpg" alt="Peregrin Tûk (Pippin)">
+            <p class="text">
+                O mais jovem hobbit, Pippin é impulsivo, sincero e um bola de energia. Ele é encantador e destemido, mas sua falta de maturidade e visão tende a colocá-lo em problemas. Pippin é intrépido, principalmente porque ele não para para pensar no perigo, mas também porque ele tem um grande coração. Ele é inocente e de natureza crédula que agradam prontamente as outras pessoas. Ele é um cômico natural...
+            </p>
+        </div>
+        <div data-desc-id="boromir" class="characters__description">
+            <h2 class="title">Boromir</h2>
+            <img src="/dist/images/boromir2.jpg" alt="Boromir">
+            <p class="text">
+                Boromir é o filho mais velho de Denethor, Regente de Gondor introvertido e de certa forma solitário, ele tem sido oprimido por um pai dominador e violento. Boromir não confia em outras pessoas, em especial Magos e regularmente trata Gandalf com desdém. Boromir acredita na grandeza dos homens, mas ele não acredita realmente em si mesmo. O mais agradável lado de sua personalidade trazido à tona pelos Hobbits, dos quais ele gosta muito. Boromir é facilmente influenciado pelo poder do Anel e sob sua influência ele se torna completamente mal intencionado. Entretanto ele percebe seu erro e muito honoravelmente se redime, morrendo como herói.
+            </p>
+        </div>
+        <div data-desc-id="faramir" class="characters__description">
+            <h2 class="title">Faramir</h2>
+            <img src="/dist/images/faramir2.jpg" alt="Faramir">
+            <p class="text">
+                Segundo filho de Denethor, Regente de Gondor, Faramir cresceu à sombra de seu irmão, o poderoso Boromir. Confiável, intensamente leal a Gondor e seu povo, Faramir é perito em ocultar a dor e humilhação que sofreu de seu pai. Ele não é sério ou amargo por natureza, mas teve um desgaste prematuro pois logo que nasceu sentiu o peso dos problemas de seu pai. Acima de tudo, Faramir é extremamente honrado e mostra uma sabedoria bem acima de sua idade.
+            </p>
+        </div>
+        <div data-desc-id="saruman" class="characters__description">
+            <h2 class="title">Saruman</h2>
+            <img src="/dist/images/saruman2.jpg" alt="Saruman">
+            <p class="text">
+                Possui voz melódica/hipnótica. Olhos penetrantes. Magro, Alto. O Vilão Chave da história. O líder dos istari, os Magos que oferecem conselho às criaturas da Terra-média, Saruman possui imensa estatura e dignidade. Como a história revela nós aprendemos que ele foi corrompido pelo desejo de poder e traiu seu dever sagrado. Uma vez nobre e sábio, é agora arrogante e esperto, falso e egoísta.
+            </p>
+        </div>
+        <div data-desc-id="gollum" class="characters__description">
+            <h2 class="title">Gollum</h2>
+            <img src="/dist/images/gollum2.jpg" alt="Gollum">
+            <p class="text">
+                Gollum foi uma vez um hobbit, chamado Sméagol, nascido no Vale do Anduim. Em 2463 da Terceira Era, o primo de Sméagol, Déagol, encontrou o Um Anel pescando, onde Isildur o perdeu dois milênios antes. Então Sméagol o matou imediatamente para ficar com o Um Anel. O poder do Anel aumentou a vida de Sméagol, mas o deformou até deixá-lo irreconhecível. A partir daí passou a se chamar Gollum, pelos ruídos guturais que fazia quando tentava falar. Com o Anel em seu poder, escondeu-se nas Montanhas Sombrias, e foi trazido aos eventos do final da Terceira Era quando encontrou Bilbo Bolseiro, que tomou o anel dele.
+            </p>
+        </div>
+        <div data-desc-id="galadriel" class="characters__description">
+            <h2 class="title">Galadriel</h2>
+            <img src="/dist/images/galadriel2.jpg" alt="Galadriel">
+            <p class="text">
+                Mais jovem filha, e única filha mulher, de Finarfin dos Noldor, Galadriel nasceu em Valinor quando as Duas Árvores ainda cresciam. Ela viajou para a Terra-média no início da Primeira Era com seus quatro irmãos. Em Beleriand, ela frequentemente ia aos salões de Thingol, e lá conheceu Celeborn. Após a Guerra da Fúria e a destruição de Beleriand, a maioria dos Noldor retornou a Valinor, mas Galadriel e Celeborn permeneceram na Terra-média. Após a perda de Amroth em 1981 (Terceira Era), Galadriel e Celeborn tornaram-se Senhor e Senhora de Lothlórien, e lá residiram até o final da Terceira Era.
+            </p>
+        </div>
+        <div data-desc-id="elrond" class="characters__description">
+            <h2 class="title">Elrond</h2>
+            <img src="/dist/images/elrond2.jpg" alt="Elrond">
+            <p class="text">
+                Senhor dos Elfos de Valfenda e pai de Arwen, Elrond possui grande autoridade e sabedoria, mas também humildade. Ele é de certa forma um vidente e está preocupado com o amor de sua filha por um mortal, Aragorn, conhecendo como ele conhece o destino escuro de Aragorn. Em um sentido mais amplo, Elrond sente uma grande tristeza pois a Era dos Elfos está chegando ao fim - mas ele não tenta mudar este fato, aceitando seu destino.
+            </p>
+        </div>
+        <div data-desc-id="arwen" class="characters__description">
+            <h2 class="title">Arwen</h2>
+            <img src="/dist/images/arwen2.jpg" alt="Arwen">
+            <p class="text">
+                A Princesa Élfica de Valfenda, cuja beleza é legendária. Arwen é uma Elfa, e por virtude de nascimento, imortal. Tudo sobre Arwen é "Ligeiro" - sua agilidade, seu sorriso, seu temperamento, seu entendimento. Ela parece gostar de jogar contra as pré-concepcões da clássica e serena dama Élfica. Ele veste uma armadura, cavalga rápido e deu seu coração a um homem mortal. O amor de Arwen por Aragorn é profundo e vigilante. Mas também ama seu pai, o Lorde Elrond, e custa muito a ela desafiá-lo. A jornada de Arwen é em direção a um profundo entendimento da escuridão e do mal que existe no mundo e um verdadeiro entendimento do que significa ser mortal.
+            </p>
+        </div>
+        <div data-desc-id="bilbo" class="characters__description">
+            <h2 class="title">Bilbo</h2>
+            <img src="/dist/images/bilbo2.jpg" alt="Bilbo">
+            <p class="text">
+                Hobbit do Condado. Nascido no ano de 2890 da Terceira Era, Bilbo era um hobbit solteiro que vivia em Bolsão. Em 2941, Bilbo foi atraído por um mago e treze anões para participar da famosa missão de Thorin e Companhia que, em 2941, provocou a morte de Smaug, e o restabelecimento do Reino Anão em Erebor. Com uma modesta porção do ouro do dragão que havia ganho em sua aventura, Bilbo voltou ao Condado, onde passou uns sessenta anos. Durante a aventura, Bilbo adquiriu um misterioso anel que tinha o poder de tornar invisível quem o colocasse. Mais adiante se descobriria que este anel, era na realidade, o Um Anel, que pertencia ao Senhor dos Anéis. No ano de 3001, Bilbo celebrou uma grande festa de aniversário e logo desapareceu perante os olhos de todos os seus convidados, deixando sua riqueza, sua casa e o Um Anel ao seu jovem primo e herdeiro adotivo, Frodo Bolseiro.
+            </p>
+        </div>
+        <div data-desc-id="gimli" class="characters__description">
+            <h2 class="title">Gimli</h2>
+            <img src="/dist/images/gimli2.jpg" alt="Gimli">
+            <p class="text">
+                Uma pessoa de tamanho normal mas pequeno e troncudo seria preferível.  Um anão combativo com um grande coração. Gimli é bravo e corajoso; um guerreiro até o âmago, que vive pelo código dos guerreiros, e leal até o fim. Gimli é um espírito vociferante que gosta de zombar de Elfos, em particular Legolas. Gimli ama o vinho e mulheres e músicas e possui um senso de humor sincero. Embora dificilmente refinado, ele é capaz de apreciar a beleza, especialmente a beleza de minas bem talhadas e túneis feitos por seus ascendentes.
+            </p>
+        </div>
+        <div data-desc-id="sauron" class="characters__description">
+            <h2 class="title">Sauron</h2>
+            <img src="/dist/images/sauron2.jpg" alt="Sauron">
+            <p class="text">
+                O Senhor dos Anéis. Nos tempos antigos, ele seduziu os Elfos de Eregion para que forjassem os Anéis do Poder. Então se converteu no Senhor dos Anéis ao forjar o Um Anel. O livro O Senhor dos Anéis conta a história da busca de Sauron ao Um Anel que foi perdido durante a Última Aliança.
+                
+            </p>
+        </div>
+        <div data-desc-id="cereborn" class="characters__description">
+            <h2 class="title">Cereborn</h2>
+            <img src="/dist/images/celeborn2.jpg" alt="Cereborn">
+            <p class="text">
+                Um Elfo de Doriath, que encontrou com Galadriel filha de Finarfin depois do Retorno dos Noldor para a Terra-médi e casaram-se. Tornaram-se Senhor e Senhora de Lórien durante a Terceira Era.
+            </p>
+        </div>
+    </section>
+    
+    <section id="linguagens" class="language">
+        <div class="language__description">
+            <h2 class="title"> A linguagem das raças</h2>
+            <p class="text">
+                "O Senhor dos Anéis", escrito por J.R.R. Tolkien, apresenta um rico e variado conjunto de linguagens, cada uma com sua própria história e características. Aqui está um resumo das principais línguas:
+            </p>
+            <ul class="language__description__list">
+                <li class="language__description__list__item">
+                    <p class="text">
+                        <span class="marked">Quenya e Sindarin </span> : São as línguas élficas mais destacadas na obra. Quenya é considerada a linguagem dos Altos-Elfos ou Eldar, enquanto Sindarin é a língua cotidiana dos Elfos Cinzentos ou Sindar. Ambas são línguas élficas antigas e possuem uma sonoridade melódica e rica em vocabulário.
+                    </p>
+                </li>
+                <li class="language__description__list__item">
+                    <p class="text">
+                        <span class="marked">Khuzdul </span> : A língua dos Anões, conhecida por ser difícil de aprender para não-Anões. É uma língua secreta entre eles e não é amplamente divulgada.
+                    </p>
+                </li>
+                <li class="language__description__list__item">
+                    <p class="text">
+                        <span class="marked"> Élfico Silvestre</span> (ou Línguas Verdes): São as línguas faladas pelos Silvan Elves, como o Lórien e o Galadhrim. São variações regionais do Sindarin e refletem a influência local e cultural dos diferentes grupos de Elfos na Terra-média.
+                    </p>
+                </li>
+                <li class="language__description__list__item">
+                    <p class="text">
+                        <span class="marked"> Westron</span> (Comum): É a língua franca da Terra-média e é frequentemente usada para comunicação entre diferentes raças e povos. É a língua em que a maior parte da narrativa é apresentada.
+                    </p>
+                </li>
+                <li class="language__description__list__item">
+                    <p class="text">
+                        <span class="marked"> Língua Negra</span>: É a língua dos servos de Sauron, especialmente dos Orcs. É uma língua gutural e áspera usada por forças malignas.
+                    </p>
+                </li>
+            </ul>
+            <p class="text">
+                Além dessas, há muitas outras línguas menores e dialetos que são mencionados ao longo dos livros, contribuindo para a riqueza linguística e cultural do mundo criado por Tolkien.
+            </p>
+        </div>
+        
+        <div class="language__translator">
+            <h2 class="title">Nome em língua de anão (Khuzdul)</h2>
+            <p class="text">
+                Baseado na língua dos anões, o tradutor transcreve o que foi digitado.
+            </p>
+            <p class="text--small">
+                Obs : a tradução não é realizada da maneira correta, serve apenas para fins de entretenimento.
+            </p>
+            <form>
+                <label class="text" for="nome">Digite seu nome:</label>
+                <input id="nome" type="text" required>
+                <button class="button" id="submit" type="submit">Enviar</button>
+            </form>
+            <div id="res" class="language__translator__result">
+                
+            </div>
+        </div>
+        </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="text">
+                Criada por Felipe Lima.
+            </p>
+            <p class="text">
+                Esta  página é apenas para fins de estudo e entretenimento.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

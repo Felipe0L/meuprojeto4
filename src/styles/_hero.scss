@@ -1,0 +1,78 @@
+@use 'variaveis';
+
+.hero {
+    padding: 10vw;
+    min-height: 100vh;
+    background-image: url(../images/lor-hero.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    
+
+    @media (max-width: 768px) {
+        background-image: url(../images/lor-hero.jpg);
+        padding-top: calc(25vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -55px;
+        p {
+            background-color: variaveis.$corDeFundo;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1023px) {
+        padding-top: calc(25vw + 25px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -55px;
+        p {
+            background-color: variaveis.$corDeFundo;
+        }
+    }
+    @media (min-width: 1023px) and (max-width: 1650px) {
+        background-image: url(../images/lor-hero2.jpg);
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
+
+    &__content {
+        max-width: 640px;
+        @media (min-width: 769px) and (max-width: 1023px) {
+            text-align: center;
+            margin: 0 auto;
+        }
+        @media (min-width: 1024px) and (max-width: 1650px) {
+            max-width: 55%;
+        }
+
+        &__branding {
+            max-width: 320px;
+            margin: 0 auto 38px;
+
+            img {
+                max-width: 100%;
+            }
+            @media (max-width: 768px) {
+                max-width: 180px;
+                text-align: center;
+            }
+        }
+
+        .title--small {
+            margin-bottom: 64px;
+        }
+
+        p {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-top: 60px;
+            }
+        }
+
+    }
+}

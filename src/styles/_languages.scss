@@ -1,0 +1,71 @@
+@use 'variaveis';
+
+.language {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 68px 0;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        display: block;
+    }
+    &__description{
+        width: 640px;
+        margin: 0 auto;
+        
+        @media (max-width: 768px) {
+            width: 70%;
+        }
+        .title {
+            padding: 16px 0;
+            text-align: center;
+        }
+
+        &__list{
+            &__item{
+                padding: 8px;
+            }
+        }
+    }
+
+    &__translator{
+        border-left: 8px solid #fff;
+        text-align: center;
+        .title {
+            padding: 16px 0;
+            text-align: center;
+        }
+
+        .text {
+            padding: 16px 0;
+        }
+        .text--small {
+            padding: 8px 0 16px;
+        }
+        .button {
+            margin-top: 32px;
+        }
+
+        @media (max-width: 767px) {
+            width: 70%;
+            border: none;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            width: 70%;
+            border: none;
+            margin: 0 auto;
+        }
+
+        &__result {
+            width: 380px;
+            max-width: 100%;
+            margin: 24px auto;
+            background-color: variaveis.$corDeFundoSecundaria;
+        }
+
+    }
+}
